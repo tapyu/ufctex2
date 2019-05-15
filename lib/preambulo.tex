@@ -27,16 +27,15 @@
     chapter=TITLE,    % Todos os capitulos devem ter caixa alta
     section=TITLE,    % Todas as secoes devem ter caixa alta
     oneside,          % Usada para impressao em apenas uma face do papel
-    english,          % Hifenizacoes em ingles
-    spanish,          % Hifenizacoes em espanhol
-    brazil            % Ultimo idioma eh o idioma padrao do documento
+    english,          % Hifenizacoes em inglês
+    brazil            % Ultimo idioma é o idioma padrao do documento
 ]{abntex2}
 
 % Importações de pacotes
 \usepackage[utf8]{inputenc}                         % Acentuação direta
-\usepackage[T1]{fontenc}                            % Codificação da fonte em 8 bits
+% \usepackage[T1]{fontenc}                            % Codificação da fonte em 8 bits
 \usepackage{graphicx}                               % Inserir figuras
-\usepackage{amsfonts, amssymb, amsmath}             % Fonte e símbolos matemáticos
+\usepackage{amsmath, amssymb, mathtools, stmaryrd, bm, gensymb} % Pacotes avançados de matemática
 \usepackage{booktabs}                               % Comandos para tabelas
 \usepackage{verbatim}                               % Texto é interpretado como escrito no documento
 \usepackage{multirow, array}                        % Múltiplas linhas e colunas em tabelas
@@ -44,7 +43,7 @@
 \usepackage{listings}                               % Utilizar codigo fonte no documento
 \usepackage{xcolor}
 \usepackage{microtype}                              % Para melhorias de justificação?
-\usepackage[portuguese,ruled,lined]{algorithm2e}    % Escrever algoritmos
+\usepackage[english,ruled,lined]{algorithm2e}    	% Escrever algoritmos
 \usepackage{algorithmic}                            % Criar Algoritmos  
 %\usepackage{float}                                  % Utilizado para criação de floats
 \usepackage{amsgen}
@@ -56,8 +55,7 @@
 \usepackage{caption}                                % Altera o comportamento da tag caption
 \usepackage[alf, abnt-emphasize=bf, bibjustif, recuo=0cm, abnt-etal-cite=3, abnt-etal-list=0,abnt-etal-text=it]{abntex2cite}  % Citações padrão ABNT
 %\usepackage[bottom]{footmisc}                      % Mantém as notas de rodapé sempre na mesma posição
-%\usepackage{times}                                 % Usa a fonte Times
-\usepackage{mathptmx}                               % Usa a fonte Times New Roman										
+\usepackage{times}                                 % Usa a fonte Times
 %\usepackage{lmodern}                               % Usa a fonte Latin Modern
 %\usepackage{subfig}                                % Posicionamento de figuras
 %\usepackage{scalefnt}                              % Permite redimensionar tamanho da fonte
@@ -71,7 +69,10 @@
 \usepackage{paracol}                                % Criar paragrafos sem identacao
 \usepackage{lib/ufctex2}		                    % Biblioteca com as normas da UFC para trabalhos academicos
 \usepackage{pdfpages}                               % Incluir pdf no documento
-\usepackage{amsmath}                                % Usar equacoes matematicas
+\usepackage{hyperref}								% criação de hyperlinks
+\usepackage{tikz, pgfplots}							% criação de figuras e plots com TikZ
+\usepackage{siunitx}								% impressão de unidades do Sistema Internacional
+\usepackage{lipsum}								% Lorem Ipsum
 
 % Organiza e gera a lista de abreviaturas, simbolos e glossario
 \makeglossaries
