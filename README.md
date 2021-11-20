@@ -6,4 +6,4 @@ Este repositório é um fork do projeto [ufcTeX2](https://github.com/profbrunolo
 - A [ufcTeX2](https://github.com/tapyu/ufctex2) é uma continuação do
 [ueceTeX2](https://github.com/thiagodnf/uecetex2), assim ainda é preciso aprimorar o template.
 - As modificações realizadas aqui serão devidamente documentadas em `CHANGELOG.md`.
-- Caso queira colaborar o a melhoria desse projeto, faça um pull request e ajude a melhora a ufcTeX2 :)
+- Caso queira colaborar com a melhoria deste projeto, faça um pull request e ajude a aprimorar a ufcTeX2 :)
